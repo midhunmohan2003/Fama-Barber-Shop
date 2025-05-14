@@ -1,0 +1,117 @@
+.service-header-section {
+  /* background-color: rgb(20, 20, 20); */
+  background-color: #0f0f0f;
+}
+
+.section-title {
+  font-size: 1rem;
+  color: darkseagreen;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.underline-hover {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: darkseagreen;
+  transition: width 0.4s ease;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+}
+
+.text-white-custom {
+  color: rgb(144, 140, 140);
+  font-size: large;
+}
+
+
+/* Card styling */
+.haircut-card {
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+.haircut-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.haircut-card:hover .card-title {
+  color: darkseagreen !important;
+}
+
+.haircut-card:hover .textCard{
+    color: white !important;
+}
+
+.haircut-card:hover .icon-cards{
+    background-color: darkseagreen !important;
+}
+
+.card-body {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+/* Title styling */
+.card-title {
+  color: white !important;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-title,
+.card-description {
+  color: #fff;
+}
+
+/* Description text */
+.card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #807f7f; 
+  margin-top: 20px;
+}
+
+.icon-cards.icon-circle {
+  width: 70px;
+  height: 70px;
+  background: #444;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card-wrapper {
+  max-width: 340px;
+  width: 100%;
+}
+
+.textCard{
+    color: darkseagreen;
+}
+

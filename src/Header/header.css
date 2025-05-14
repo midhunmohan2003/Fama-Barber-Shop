@@ -1,0 +1,23 @@
+.nav {
+  background-color: rgb(20, 20, 20);
+}
+
+.btnHeader {
+  color: white !important;
+}
+.btnHeader:hover {
+  color: darkseagreen !important;
+  text-decoration: underline;
+}
+
+.btnBook {
+  background-color: darkseagreen;
+  border: none;
+  width: 12rem;
+  height: 2.2rem;
+  border-radius: 0.6rem;
+  color: white;
+}
+.btnBook:hover {
+  background-color: rgb(120, 165, 120);
+}

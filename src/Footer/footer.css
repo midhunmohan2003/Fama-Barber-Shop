@@ -1,0 +1,134 @@
+.footer-section {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.footer-link {
+  color: #bbb;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: darkseagreen;
+  text-decoration: underline;
+}
+
+.subscribeBtn{
+    background-color: darkseagreen !important;
+    border: none;
+    width: 12rem;
+    height: 2.2rem;
+    border-radius: 0.6rem;
+    color: black !important;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.social-icon:hover{
+    color: darkseagreen !important;
+}
+
+@media (max-width: 991px) {
+  /* For medium devices like tablets: Stack the columns */
+  .socaial {
+    display: flex;
+    gap: 10px;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  /* On mobile devices: Stack the footer content and adjust fonts */
+  .footer-section {
+    padding: 3rem 0;
+  }
+
+  .footer-link {
+    font-size: 1rem;
+  }
+
+  .text-light,
+  .footer-link {
+    font-size: 0.9rem;
+  }
+
+  /* Stack the sections vertically */
+  .footer-section .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section .col {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Adjust the logo size */
+  .footer-section img {
+    height: 30px; /* Adjust image size for smaller screens */
+  }
+
+  /* Modify the newsletter form and button size */
+  .subscribeBtn {
+    font-size: 0.85rem;
+  }
+
+  .social-icon {
+    font-size: 1.3rem;
+  }
+
+  /* Center the h5 element on small devices */
+  .footer-section h5 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /* On extra-small devices (phones): further adjustments */
+  .footer-section {
+    padding: 2rem 0;
+  }
+
+  .footer-section .row {
+    text-align: center;
+  }
+
+  .footer-section .col {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .footer-link {
+    font-size: 0.85rem;
+  }
+
+  .text-light,
+  .footer-link {
+    font-size: 0.85rem;
+  }
+
+  /* Ensure social icons are centered */
+  .socaial {
+    justify-content: center;
+  }
+
+  /* Adjust logo size */
+  .footer-section img {
+    height: 25px; /* Further adjust logo for small screens */
+  }
+
+  /* Center the h5 element on extra-small devices */
+  .footer-section h5 {
+    text-align: center !important;
+  }
+}

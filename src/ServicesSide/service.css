@@ -1,0 +1,120 @@
+.service-header-section {
+  /* background-color: rgb(20, 20, 20); */
+  background-color: #0f0f0f;
+}
+
+.section-title {
+  font-size: 1rem;
+  color: darkseagreen;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.underline-hover {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: darkseagreen;
+  transition: width 0.4s ease;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+}
+
+.text-white-custom {
+  color: rgb(144, 140, 140);
+  font-size: large;
+}
+
+
+/* Card styling */
+.haircut-card {
+  width: 100%;
+  border: 1px solid rgb(93, 91, 91) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 15px !important;
+}
+.haircut-card:hover{
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  border: 1px solid darkseagreen !important;
+}
+
+.haircut-card:hover .card-title {
+  color: darkseagreen !important;
+}
+
+.haircut-card:hover .icon-card{
+  background-color: rgb(71, 68, 51);
+}
+
+
+.card-body {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+/* Title styling */
+.card-title {
+  color: white !important;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Description text */
+.card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #807f7f; 
+  margin-top: 20px;
+}
+
+/* Service list styling */
+.service-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.service-item {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #807f7f;  
+}
+
+.icon-card {
+  display: inline-block;
+  background-color: #363535;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon-card img {
+  padding-bottom: 10px;
+  width: 50px; 
+  height: 50px;
+}
+
+.card-wrapper {
+  max-width: 340px;
+  width: 100%;
+}

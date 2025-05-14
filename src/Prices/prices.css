@@ -1,0 +1,116 @@
+.prices-header-section {
+  background-color: rgb(20, 20, 20);
+}
+
+.service-card {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid transparent;
+  border-radius: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.service-card:hover {
+  border: 1px solid darkseagreen;
+  transform: scale(1.02);
+}
+
+.service-title {
+  font-size: 1.5rem;
+  font-weight: bolder !important;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #222;
+}
+
+.price-section {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.price-currency {
+  font-size: 1.2rem;
+  vertical-align: top;
+  margin-right: 2px;
+  color: darkseagreen;
+  font-weight: bolder;
+}
+
+.price-amount {
+  font-size: 2.5rem;
+  font-weight: bolder !important;
+  color: darkseagreen;
+}
+
+.price-period {
+  font-size: 1rem;
+  vertical-align: bottom;
+  margin-left: 2px;
+  color: #666;
+}
+
+.service-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.service-list li {
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  color: white;
+}
+
+.service-list li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.service-list li:hover {
+  background-color: rgba(126, 128, 126, 0.1); /* light darkseagreen */
+  transform: translateX(5px);
+  cursor: default;
+}
+
+
+.service-list li:last-child {
+  border-bottom: none;
+}
+
+.divider {
+  height: 1px;
+  margin: 1rem 0;
+}
+
+.book-btn {
+  width: 100%;
+  padding: 0.75rem;
+  font-weight: 600;
+  border-radius: 0;
+  background-color: #000;
+  border: none;
+}
+
+.book-btn:hover {
+  background-color: darkseagreen !important;
+}
+
+.tick-icon {
+  background-color: darkseagreen;
+  color: white;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 0.8rem;
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,105 @@
+.section-title {
+  font-size: 1rem;
+  color: darkseagreen;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.underline-hover {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: darkseagreen;
+  transition: width 0.4s ease;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+}
+
+.about-section {
+  background-color: rgb(20, 20, 20);
+}
+
+.text-white-custom {
+  color: rgb(144, 140, 140);
+  font-size: large;
+}
+
+.text-white-customCard {
+  font-size: medium;
+  color: rgb(144, 140, 140);
+  font-weight: lighter;
+}
+
+.card {
+  background-color: #2c2c2c !important;
+  border: none;
+}
+
+.paragraph-with-line {
+  position: relative;
+  padding-left: 15px;
+  border-left: 3px solid darkseagreen;
+}
+
+.image-zoom-container {
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+
+.zoom-img {
+  transition: transform 0.5s ease;
+}
+
+.image-zoom-container:hover .zoom-img {
+  transform: scale(1.1);
+}
+
+.hover-effect {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hover-effect::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: darkseagreen;
+  transition: width 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateX(5px);
+}
+
+.hover-effect:hover::after {
+  width: 100%;
+}
+
+.quote {
+  color: darkseagreen;
+  font-size: large;
+  padding-right: 9px;
+}
+
